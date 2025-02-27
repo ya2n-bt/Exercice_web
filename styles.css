@@ -4,3 +4,25 @@ body{
     color: white;
     margin: 0, auto;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    line-height: 12px;
+}
+
+header h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+}
+
+header span {
+    font-size: 30px;
+}
+
+header img {
+    height: 300px;
+}
