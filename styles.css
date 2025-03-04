@@ -59,3 +59,20 @@ header img {
     color: #d88d13;
     text-shadow: -4px 3px 0 black;
 }
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #555;
+    border-top: 15px solid #f25a29;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
