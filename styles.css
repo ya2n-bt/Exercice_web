@@ -4,3 +4,36 @@ body{
     color: white;
     margin: 0, auto;
 }
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+#about div h2 {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+#about div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    flex: 1;
+    border-radius: 10px;
+    max-width: 300px;
+    font-stretch: 2;
+    border-style: solid;
+    border-width: 3px;
+    background: linear-gradient(to right, #f25a29 0%, #373737 100%);
+}
+
+#about div:hover {
+    box-shadow: 12px 12px 2px 1px #f25a2980;
+    color: #d88d13;
+    text-shadow: -4px 3px 0 black;
+}
