@@ -77,18 +77,6 @@ header img {
     border-radius: 10px;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 0;
-    font-weight: 600;
-    font-size: 18px;
-    background-color: #555;
-    border-top: 15px solid #f25a29;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
 .sunmoon {
     background: url(./Images/cocktail_01.jpg);
@@ -113,6 +101,29 @@ footer {
 .spicherry {
     background: url(./Images/cocktail_05.jpg);
     background-size: cover;
+}
+
+cocktails>div h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    background-color: #00000080;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #555;
+    border-top: 15px solid #f25a29;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 footer a {
