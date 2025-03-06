@@ -66,6 +66,8 @@ header img {
 }
 
 #cocktails>div {
+    position: relative;
+    overflow: hidden;
     margin: 10px;
     display: flex;
     justify-content: center;
@@ -114,6 +116,8 @@ header img {
 }
 
 .overlay {
+    position: absolute;
+    background: linear-gradient(180deg, #f25a29 0%, #373737 100%);
     height: 100%;
     width: 100%;
     display: flex;
@@ -131,6 +135,12 @@ header img {
 .overlay p {
     font-size: 25px;
     text-align: center;
+}
+
+#cocktails>div:hover .overlay {
+    z-index: 1;
+    transform: rotate(360deg);
+    
 }
 
 footer {
