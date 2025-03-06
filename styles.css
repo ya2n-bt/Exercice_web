@@ -59,6 +59,102 @@ header img {
     color: #d88d13;
     text-shadow: -4px 3px 0 black;
 }
+
+#cocktails>div {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    border: 3px solid #f25a29;
+    box-shadow: 12px 12px 2px 1px #f25a2980;
+    border-radius: 10px;
+}
+
+#cocktails {
+    padding: 150px 20px;
+    margin: 10px 20%;
+    display: grid;
+    grid-template-areas: 
+    "c_01 c_01 c_01 c_02 c_02 c_02"
+    "c_03 c_03 c_04 c_04 c_05 c_05";
+    grid-gap: 10px;
+}
+
+
+.sunmoon {
+    grid-area: c_01;
+    background: url(./Images/cocktail_01.jpg);
+    background-size: cover;
+}
+
+.mentalux {
+    grid-area: c_02;
+    background: url(./Images/cocktail_02.jpg);
+    background-size: cover;
+}
+
+.cocowhip {
+    grid-area: c_03;
+    background: url(./Images/cocktail_03.jpg);
+    background-size: cover;
+}
+
+.citrinus {
+    grid-area: c_04;
+    background: url(./Images/cocktail_04.jpg);
+    background-size: cover;
+}
+
+.spicherry {
+    grid-area: c_05;
+    background: url(./Images/cocktail_05.jpg);
+    background-size: cover;
+}
+
+#cocktails>div h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    background-color: #00000080;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    background: linear-gradient(180deg, #f25a29 0%, #373737 100%);
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+    border: 2px solid #f25a29;
+    border-radius: 10px;
+    transition: all 0.7s;
+}
+
+.overlay img {
+    width: 140px;
+}
+
+.overlay p {
+    font-size: 25px;
+    text-align: center;
+}
+
+#cocktails>div:hover .overlay {
+    z-index: 1;
+    transform: rotate(360deg);
+    top:0px;
+}
+
 footer {
     display: flex;
     align-items: center;
