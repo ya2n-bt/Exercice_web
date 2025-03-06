@@ -60,11 +60,6 @@ header img {
     text-shadow: -4px 3px 0 black;
 }
 
-#cocktails {
-    padding: 150px 20px;
-    margin: 10px 20%;
-}
-
 #cocktails>div {
     position: relative;
     overflow: hidden;
@@ -79,28 +74,43 @@ header img {
     border-radius: 10px;
 }
 
+#cocktails {
+    padding: 150px 20px;
+    margin: 10px 20%;
+    display: grid;
+    grid-template-areas: 
+    "c_01 c_01 c_01 c_02 c_02 c_02"
+    "c_03 c_03 c_04 c_04 c_05 c_05";
+    grid-gap: 10px;
+}
+
 
 .sunmoon {
+    grid-area: c_01;
     background: url(./Images/cocktail_01.jpg);
     background-size: cover;
 }
 
 .mentalux {
+    grid-area: c_02;
     background: url(./Images/cocktail_02.jpg);
     background-size: cover;
 }
 
 .cocowhip {
+    grid-area: c_03;
     background: url(./Images/cocktail_03.jpg);
     background-size: cover;
 }
 
 .citrinus {
+    grid-area: c_04;
     background: url(./Images/cocktail_04.jpg);
     background-size: cover;
 }
 
 .spicherry {
+    grid-area: c_05;
     background: url(./Images/cocktail_05.jpg);
     background-size: cover;
 }
